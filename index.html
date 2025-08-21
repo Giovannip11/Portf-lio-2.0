@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Giovanni Milan Câmara Pinto</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+
+<body>
+  <header>
+    <h1>Portfólio</h1>
+    <h2>Giovanni Milan Câmara Pinto</h2>
+    <img src="/images/imagem-foto.jpeg" alt="Foto de Giovanni Milan" style="width:140px; border-radius:50%; margin-top:16px; box-shadow:0 2px 8px #0002;">
+  </header>
+
+  <nav id="menu">
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+    </ul>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre</h2>
+    <p>Olá! Meu nome é Giovanni Milan, sou estudante de Ciência da Computação da UVV. Tenho habilidades para atuar como desenvolvedor full-stack, com maior afinidade pela área de back-end. Sou persistente, proativo e apaixonado por resolver problemas. Tenho facilidade com linguagens como Java e Python, e estou sempre em busca de aprimorar meus conhecimentos e contribuir de forma significativa nos projetos em que me envolvo.</p>
+  </section>
+
+  <section id="habilidades">
+    <h2>Habilidades</h2>
+    <p style="margin-top:18px; color:#0288D1; font-size:1em; font-style:italic;">
+      Clique nos ícones para saber mais.
+    </p>
+
+    <div>
+      <h3>Principais Linguagens de Programação:</h3>
+      <ul>
+        <li><i class="devicon-java-plain colored" onclick="abrirModal('java')"></i> Java</li>
+        <li><i class="devicon-python-plain colored" onclick="abrirModal('python')"></i> Python</li>
+        <li><i class="devicon-c-plain colored" onclick="abrirModal('c')"></i> C</li>
+        <li><i class="devicon-csharp-plain colored" onclick="abrirModal('csharp')"></i> C#</li>
+        <li><i class="devicon-javascript-plain colored" onclick="abrirModal('js')"></i> JavaScript</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>SGBD:</h3>
+      <ul>
+        <li><i class="devicon-mysql-original colored" onclick="abrirModal('mysql')"></i> MySQL</li>
+        <li><i class="devicon-postgresql-plain colored" onclick="abrirModal('postgresql')"></i> PostgreSQL</li>
+        <li><i class="devicon-mongodb-plain colored" onclick="abrirModal('mongodb')"></i> MongoDB</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Frameworks:</h3>
+      <ul>
+        <li><i class="devicon-react-original colored" onclick="abrirModal('react')"></i> React</li>
+        <li><i class="devicon-flask-original colored" onclick="abrirModal('flask')"></i> Flask</li>
+        <li><i class="devicon-blazor-plain colored" onclick="abrirModal('blazor')"></i> Blazor</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Soft Skills:</h3>
+      <ul>
+        <li onclick="abrirModal('equipe')">Trabalho em equipe</li>
+        <li onclick="abrirModal('comunicacao')">Comunicação</li>
+        <li onclick="abrirModal('problemas')">Resolução de problemas</li>
+      </ul>
+    </div>
+    
+  </section>
+
+ 
+
+  <footer>
+    <p>By Giovanni Milan</p>
+    <div style="margin-top:10px;">
+      <a href="https://github.com/Giovannip11" target="_blank" style="margin-right:12px; text-decoration:none;">
+        <i class="devicon-github-original colored" style="font-size:1.6em; vertical-align:middle;"></i> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/giovanni-milan-c%C3%A2mara-pinto-702953323/" target="_blank" style="text-decoration:none;">
+        <i class="devicon-linkedin-plain colored" style="font-size:1.6em; vertical-align:middle;"></i> LinkedIn
+      </a>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal()">&times;</span>
+      <div id="modal-texto"></div>
+    </div>
+  </div>
+
+   <script src="modalData.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

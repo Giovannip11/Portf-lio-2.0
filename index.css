@@ -1,0 +1,162 @@
+/* Estilo geral da página */
+body {
+    background: linear-gradient(135deg, #B3E5FC 0%, #E1F5FE 50%, #B3E5FC 100%);
+    font-family: 'Cutive Mono', monospace;
+    margin: 0;
+    padding: 20px;
+    color: #2e2e2e;
+    font-size: 18px; /* Aumenta a fonte base */
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header h2 {
+    margin: 10px 0 0;
+    font-size: 1.8em;
+}
+
+/* Navegação */
+#menu {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #01579B;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#menu a:hover {
+    color: #0288D1;
+}
+
+/* Seções */
+section {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    border-bottom: 2px solid #0288D1;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: #01579B;
+    font-size: 2em;
+}
+
+section h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Listas */
+ul {
+    list-style-type: square;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+/* Estilo dos ícones Devicon */
+i[class^="devicon-"] {
+    font-size: 28px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+/* Hover para ícones clicáveis */
+i[class^="devicon-"][onclick] {
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+i[class^="devicon-"][onclick]:hover {
+    transform: scale(1.2) rotate(-5deg);
+    filter: brightness(1.3) drop-shadow(0 2px 8px #0288D1aa);
+}
+
+/* Hover para soft skills clicáveis */
+#habilidades li[onclick] {
+    cursor: pointer;
+    transition: color 0.2s, background 0.2s;
+}
+
+#habilidades li[onclick]:hover {
+    color: #0288D1;
+    background: #e1f5fe;
+    border-radius: 6px;
+    padding-left: 6px;
+}
+
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+    font-style: italic;
+    margin-top: 40px;
+    font-size: 1.1em;
+    color: #01579B;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background: #CBE1DE;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
